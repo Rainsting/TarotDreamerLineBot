@@ -141,23 +141,6 @@ class LINEBotTiny
 		$response = json_decode($response,true);
         return $response;
     }
-
-    public function getProfileIDs($userId)
-    {   $header = array(
-            'Authorization: Bearer ' . $this->channelAccessToken ."\r\n",
-        );
-
-        $context = stream_context_create(array(
-            "http" => array(
-                "method" => "GET",
-                "header" => $header,               
-            ),
-        ));
-        $url='https://api.line.me/v2/bot/profile/'.$userId;
-        $response = file_get_contents($url, false, $context);
-        $response = json_decode($response,true);
-        return $response;
-    }
 	
 	public function getGroupProfile($groupId,$userId)
     {	$header = array(
