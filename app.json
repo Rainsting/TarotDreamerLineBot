@@ -1,7 +1,7 @@
 {
-  "name": "TrpgLineBot-php",
-  "description": "簡單的、模組化的TrpgLineBot",
-  "repository": "https://github.com/retsnimle/TrpgLineBot-php.git",
+  "name": "TarotDreamerLineBot-php",
+  "description": "提供簡單的塔羅占卜諮詢",
+  "repository": "https://github.com/Rainsting/TarotDreamerLineBot",
   "keywords": ["LineBot-php", "TRPG"],
   "env": {
     "LINE_CHANNEL_SECRET": {
@@ -11,18 +11,18 @@
       "description": "LINE_Channel_Accesstoken"
     },
     "KEY_WORD": {
-      "description": "你的機器人的名字，同時也做為觸發關鍵字，必填。"
+      "description": "塔羅小幫手"
     },
     "MANUAL_URL": {
-      "description": "你的說明手冊放置的位置，預設值為(.\\exampleJson\\manual.json)。",
+      "description": "./exampleJson/manual.json",
 	  "value": "default"
     },
     "TEXT_REPLY_URL": {
-      "description": "你的文字回應關鍵字放置的位置，預設值為(.\\exampleJson\\textReply.json)。",
+      "description": "./exampleJson/textReply.json",
 	  "value": "default"
     },
     "IMGS_REPLY_URL": {
-      "description": "你的圖片回應放置的位置，預設值為(.\\exampleJson\\imgReply.json)。",
+      "description": "./exampleJson/imgReply.json",
 	  "value": "default"
     }                
   }
