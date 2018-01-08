@@ -165,7 +165,7 @@ foreach($bot->parseEvents() as $event)
 		if ($source['type'] == "user")
 		{
 			$userName = $bot->getProfile($source['userId']) ['displayName'];
-			error_log("訊息發送人：" . $userName . ", userId: " . $userId);
+			error_log("訊息發送人：" . $userName . ", userId: " . $source['userId']);
 		}
 		// 對訊息類別做篩選
 		switch ($message['type'])
