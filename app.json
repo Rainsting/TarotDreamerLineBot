@@ -14,15 +14,15 @@
       "description": "塔羅小幫手"
     },
     "MANUAL_URL": {
-      "description": "./exampleJson/manual.json",
+      "description": "../exampleJson/manual.json",
 	  "value": "default"
     },
     "TEXT_REPLY_URL": {
-      "description": "./exampleJson/textReply.json",
+      "description": "../exampleJson/textReply.json",
 	  "value": "default"
     },
     "IMGS_REPLY_URL": {
-      "description": "./exampleJson/imgReply.json",
+      "description": "../exampleJson/imgReply.json",
 	  "value": "default"
     }                
   }

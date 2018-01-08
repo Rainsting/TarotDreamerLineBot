@@ -127,7 +127,7 @@ class MutiMessage
 	public function carousel($altText, $columns)
 
 	{
-		error_log("準備回傳旋轉木馬訊息（殺小啦wwww");
+		error_log("準備回傳旋轉木馬訊息");
 		$message = array(
 			'type' => "template",
 			'altText' => $altText,
@@ -155,7 +155,7 @@ foreach($bot->parseEvents() as $event)
 			if ($userId != null)
 			{
 				$userName = $bot->getGroupProfile($groupId, $userId) ['displayName'];
-				error_log("訊息發送人：" . $userName);
+				error_log("訊息發送人：" . $userName . ", groupId: " . $groupId .", userId: " . $userId);
 			}
 			else
 			{
