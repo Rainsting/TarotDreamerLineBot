@@ -154,7 +154,9 @@ foreach($bot->parseEvents() as $event)
 			error_log("群組ID：" . $groupId);
 			if ($userId != null)
 			{
+				/* Debug */
 				$userName = $bot->getGroupProfile($groupId, $userId) ['displayName'];
+				$userId = $bot->getGroupProfile($groupId, $userId) ['userId'];
 				error_log("訊息發送人：" . $userName . ", groupId: " . $groupId .", userId: " . $userId);
 			}
 			else
@@ -164,6 +166,7 @@ foreach($bot->parseEvents() as $event)
 		}
 		if ($source['type'] == "user")
 		{
+			/* Debug */
 			$userName = $bot->getProfile($source['userId']) ['displayName'];
 			$userId = $bot->getProfile($source['userId']) ['userId'];
 			error_log("訊息發送人：" . $userName . ", userId: " . $userId);

@@ -1,9 +1,12 @@
 <?php
 
 function KeyWordReply($inputStr,$keyWord,$manualUrl,$textReplyUrl,$userName) { 
+
 	$inputStr = strtolower($inputStr);
 	
-	
+	/* Debug */
+	error_log("Under KeyWordReply: $manualUrl = " . $manualUrl);
+
 	//以下是回應功能
 	//讀入文字回應變數
 	$content = file_get_contents($manualUrl);

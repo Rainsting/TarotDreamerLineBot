@@ -160,6 +160,7 @@ class LINEBotTiny
         return $response;
     }
 	
+    /* To get all of user id in the group. */
 	public function getGroupIDs($groupId)
     {	$header = array(
             'Authorization: Bearer ' . $this->channelAccessToken ."\r\n",
